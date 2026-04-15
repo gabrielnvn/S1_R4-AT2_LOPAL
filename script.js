@@ -1,15 +1,6 @@
-let alturaUm = Number(prompt("Quantos metros você tem?:"));
+let senhaUm = prompt("Insira a senha para ter acesso a sua conta bancária: ")
 
-if (isNaN(alturaUm)) {
-    alert("Por favor digite um numero")
-} else { 
-    if (alturaUm >= 1.40) {
-    alert("Você pode entrar no brinquedo")
-} else {
-    alert("Você não tem altura o suficiente par ir no brinquedo,")
-}
     
-}
 
 
 

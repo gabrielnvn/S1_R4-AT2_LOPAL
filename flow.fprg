@@ -4,22 +4,25 @@
         <attribute name="name" value="flow"/>
         <attribute name="authors" value="I1HN"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2026-04-15 10:15:03 "/>
-        <attribute name="created" value="STFITjtFQ0U0MzZTRU5BSTEwOzIwMjYtMDQtMTU7IjEwOjA5OjE0ICI7MjI4OQ=="/>
-        <attribute name="edited" value="STFITjtFQ0U0MzZTRU5BSTEwOzIwMjYtMDQtMTU7IjEwOjE1OjAzICI7MTsyMzky"/>
+        <attribute name="saved" value="2026-04-15 10:40:03 "/>
+        <attribute name="created" value="STFITjtFQ0U0MzZTRU5BSTEwOzIwMjYtMDQtMTU7IjEwOjMyOjIxICI7MjI4Mw=="/>
+        <attribute name="edited" value="STFITjtFQ0U0MzZTRU5BSTEwOzIwMjYtMDQtMTU7IjEwOjQwOjAzICI7MTsyMzkw"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="alturaUm" type="Real" array="False" size=""/>
-            <output expression="&quot;Quantos metros voc&#234; tem?&quot;" newline="True"/>
-            <input variable="alturaUm"/>
-            <if expression="alturaUm &gt;= 1.40">
+            <declare name="senhaUm" type="Integer" array="False" size=""/>
+            <declare name="senhaDois" type="Integer" array="False" size=""/>
+            <output expression="&quot;Insira sua senha para acessar sua conta banc&#225;ria:&quot;" newline="True"/>
+            <input variable="senhaUm"/>
+            <output expression="&quot;Digite a senha novamente para completar a etapa de seguran&#231;a&quot;" newline="True"/>
+            <input variable="senhaDois"/>
+            <if expression="senhaDois = senhaUm">
                 <then>
-                    <output expression="&quot;Voc&#234; pode entrar no brinquedo!!&quot;" newline="True"/>
+                    <output expression="&quot;Acesso permitido&quot;" newline="True"/>
                 </then>
                 <else>
-                    <output expression="&quot; Altura insuficiente,  voc&#234; nao pode entrar no brinquedo&quot;" newline="True"/>
+                    <output expression="&quot;Acesso negado, tente novamente&quot;" newline="True"/>
                 </else>
             </if>
         </body>
