@@ -1,13 +1,14 @@
-let valorUm = Number(prompt("Escreva um quanto deu a sua compra:"));
+let alturaUm = Number(prompt("Quantos metros você tem?:"));
 
-if (isNaN(valorUm)) {
-    alert("Por favor insira um numero!!!")
+if (isNaN(alturaUm)) {
+    alert("Por favor digite um numero")
+} else { 
+    if (alturaUm >= 1.40) {
+    alert("Você pode entrar no brinquedo")
 } else {
-    if (valorUm >= 150) {
-        alert(`como seu valor foi acima de R$ 150,00 você recebeu um desconto de 2%, sua compra ficou em um total de ${(valorUm - valorUm*2/100).toFixed(2)} reais`)
-    } else {
-        alert(`como sua compra ficou abaixo de R$ 150,00 você receberá um cashback de ${(valorUm*2/100).toFixed(2)} reais, use-o na sua proxima compra `)
-    }
+    alert("Você não tem altura o suficiente par ir no brinquedo,")
+}
+    
 }
 
 
