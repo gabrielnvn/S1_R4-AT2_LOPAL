@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ex1"/>
+        <attribute name="authors" value="I1HN"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-15 07:45:51 "/>
+        <attribute name="created" value="STFITjtFQ0U0MzZTRU5BSTEwOzIwMjYtMDQtMTU7IjA3OjM4OjE3ICI7MjMwMA=="/>
+        <attribute name="edited" value="STFITjtFQ0U0MzZTRU5BSTEwOzIwMjYtMDQtMTU7IjA3OjQ1OjUxICI7MTsyNDA0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numberUM" type="Integer" array="False" size=""/>
+            <output expression="&quot;escreva um numero par:&quot;" newline="True"/>
+            <input variable="numberUm"/>
+            <if expression="numberUm % 2 = 0">
+                <then>
+                    <output expression="&quot; O numero &#233; par!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;0 numero n&#227;o &#233; par!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
