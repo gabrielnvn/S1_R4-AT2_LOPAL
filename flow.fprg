@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="flow"/>
+        <attribute name="authors" value="I1HN"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-15 09:16:52 "/>
+        <attribute name="created" value="STFITjtFQ0U0MzZTRU5BSTEwOzIwMjYtMDQtMTU7IjA3OjQ2OjQyICI7MjI5Nw=="/>
+        <attribute name="edited" value="STFITjtFQ0U0MzZTRU5BSTEwOzIwMjYtMDQtMTU7IjA5OjE2OjUyICI7MzsyNDA3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="valorUm" type="Real" array="False" size=""/>
+            <declare name="result" type="Real" array="False" size=""/>
+            <output expression="&quot; Quanto deu sua compra&quot;" newline="True"/>
+            <input variable="valorUm"/>
+            <if expression="valorUm &gt;= 150">
+                <then>
+                    <output expression="&quot; Voc&#234; ganhou um desconto de &quot; &amp;valorUm*2/100&amp; &quot; reais, sua comprar ficou no valor ser&#225; de &quot; &amp;valorUm - valorUm*2/100" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Sua compra deu &quot; &amp;valorUm&amp; &quot; reais e ter&#225; um cashback de &quot; &amp;valorUm*2/100&amp; &quot; reais&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
