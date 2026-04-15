@@ -1,5 +1,7 @@
 let valorUm = Number(prompt("Escreva um quanto deu a sua compra:"));
-
+ 
+// Usei o isNaN para identificar se o usuario usou um numero ou não
+// O IF e ELSE serve para ter duas alternativas, se não for isso, é aquilo
 if (isNaN(valorUm)) {
     alert("Por favor insira um numero!!!")
 } else {
